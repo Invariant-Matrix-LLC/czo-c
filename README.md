@@ -121,17 +121,7 @@ This list is the product boundary, not a to-do list.
 - **Ligatures collapse to their first letter.** `Æ` → `AE`, but `Ĳ` → `I`.
   Documented and deliberate; revisit only with a spec version bump.
 
-## Where this sits
 
-CZO is the first of five stages in a normalize → test → route → trace →
-audit spine. It is the only one that can be specified without reference to
-your data, which is why it is the one that can be given away.
-
-Canonicalization is roughly 60–70% of the *volume* of work in a
-deduplication pipeline and close to 0% of the *judgment*. The judgment —
-what constitutes a duplicate, which collisions matter, what a finding is
-worth, which exceptions are real — lives in the engine above this line, and
-is not in this repository.
 
 ## License
 
