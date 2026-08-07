@@ -123,8 +123,32 @@ This list is the product boundary, not a to-do list.
 
 
 
+Why CZO Exists
+
+Most software doesn't fail because the algorithms are wrong—it fails because the input is messy.
+
+A single customer, invoice, product, or account may appear dozens of different ways:
+
+- "Acme Corp."
+- "ACME   CORP"
+- "acme​ corp"
+
+To many systems, those are completely different values. The result is duplicate records, broken lookups, failed joins, inconsistent reports, and expensive cleanup.
+
+CZO solves that problem before it reaches your application.
+
+It converts equivalent inputs into a single canonical representation, assigns a stable identity digest, records every transformation it performed, and refuses to silently guess when the input is genuinely ambiguous.
+
+Clean data isn't something you repair later. It's something you refuse to let become dirty in the first place.
+
+
+
+
+
 ## License
 
 Apache-2.0. (Add `LICENSE` before publishing; Apache-2.0 rather than MIT
 because it carries an explicit patent grant, which matters for a
 company-backed project that others will embed.)
+
+
